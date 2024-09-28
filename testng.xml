@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/SONY/Downloads/TrelloRestAssure">
+        <classes>
+            <class name="trelloTests.BoardTests">
+                <methods>
+                    <include name="getBoard"/>
+                    <include name="updateBoard"/>
+                </methods>
+            </class>
+            <class name="trelloTests.CardTests">
+                <methods>
+                    <include name="createList"/>
+                    <include name="createCard"/>
+                    <include name="updateCard"/>
+                    <include name="getCard"/>
+                    <include name="deleteCard"/>
+                </methods>
+            </class>
+            <class name="trelloTests.ChecklistTests">
+                <methods>
+                    <include name="createList"/>
+                    <include name="createCard"/>
+                    <include name="createChecklist"/>
+                    <include name="updateChecklist"/>
+                    <include name="getChecklist"/>
+                    <include name="deleteChecklist"/>
+                </methods>
+            </class>
+            <class name="trelloTests.E2E">
+                <methods>
+                    <include name="getBoard"/>
+                    <include name="updateBoard"/>
+                    <include name="updateList"/>
+                    <include name="updateCard"/>
+                    <include name="getList"/>
+                    <include name="getCard"/>
+                    <include name="createChecklist"/>
+                    <include name="updateChecklist"/>
+                    <include name="getChecklist"/>
+                </methods>
+            </class>
+            <class name="trelloTests.ListsTests">
+                <methods>
+                    <include name="createList"/>
+                    <include name="updateList"/>
+                    <include name="getList"/>
+                    <include name="archiveList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
