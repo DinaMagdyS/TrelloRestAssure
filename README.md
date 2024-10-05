@@ -29,6 +29,8 @@ Before diving into the project, ensure you have the following prerequisites:
 
 2. Import the project into your favorite IDE (e.g., IntelliJ IDEA or Eclipse).
 3. Install the required dependencies (TestNG, RestAssured) using Maven.
+4. Install Allure on your system.  https://github.com/allure-framework/allure2/releases
+5. Install Allure TestNG depenency. 
 
 ## Project Structure
 The project structure is organized as follows:
@@ -54,6 +56,12 @@ The project structure is organized as follows:
 ○ ChecklistTests: Contains tests related to Trello checklists.
 
 ○ E2E: Contains tests related to end to end scenario.
+
+## Allure Reports
+After Running, copy the absolute path of the 'allure-results' folder and in your terminal (cmd) 
+```console
+allure serve absolutepath
+```
 
 ## Contact 
 For any queries or assistance, feel free to contact me via email at dinamagdyelmorsy@outlook.com
