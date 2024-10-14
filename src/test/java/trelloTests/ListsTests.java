@@ -10,9 +10,6 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class ListsTests extends BaseTest {
-    //public static String list_id;
-    //public static String listName = "NewList";
-    //public static String updatedListName = "UpdatedList";
 
     @Test (priority = 1)
     public void createList(){

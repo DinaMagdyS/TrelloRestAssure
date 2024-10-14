@@ -18,7 +18,7 @@ public class ChecklistTests extends BaseTest {
                         queryParam("token", Utils.token).
                         queryParam("idBoard",Data.board_id).
                         queryParam("name",Data.listName).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         post(Utils.listsUrl);
         response.then().
@@ -39,7 +39,7 @@ public class ChecklistTests extends BaseTest {
                         queryParam("key", Utils.key).
                         queryParam("token", Utils.token).
                         queryParam("idList",Data.list_id).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         post();
         response.then().
@@ -109,7 +109,7 @@ public class ChecklistTests extends BaseTest {
                         baseUri(Utils.checklistsUrl).
                         queryParam("key", Utils.key).
                         queryParam("token", Utils.token).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         delete("/"+ Data.checklist_id);
         response.then().

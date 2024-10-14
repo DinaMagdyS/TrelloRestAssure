@@ -21,7 +21,7 @@ public class BoardTests extends BaseTest {
                 when().
                             contentType(ContentType.JSON).
                             get("/"+ Data.board_id);
-                response.then().
+        response.then().
                             assertThat().
                             statusCode(200).
                             body("id",equalTo(Data.board_id)).

@@ -49,7 +49,7 @@ public class SetUp {
                 queryParam("token", Utils.token).
              when().
                 contentType(ContentType.JSON).
-                delete("/"+ boardID);
+                delete(boardID);
     }
 
     public static Response deleteChecklist(String checklistID)

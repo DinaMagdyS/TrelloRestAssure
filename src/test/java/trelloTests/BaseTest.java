@@ -6,7 +6,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import utils.Utils;
 import utils.Data;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
@@ -20,7 +19,7 @@ public class BaseTest {
                         queryParam("key", Utils.key).
                         queryParam("token", Utils.token).
                         queryParam("name",Data.boardName).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         post(Utils.boardsUrl);
 
@@ -31,6 +30,7 @@ public class BaseTest {
         Data.board_id = response.path("id");
     }
 
+
     @AfterClass
     public void deleteBoard(){
         Response response =
@@ -38,7 +38,7 @@ public class BaseTest {
                         baseUri(Utils.boardsUrl).
                         queryParam("key", Utils.key).
                         queryParam("token", Utils.token).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         delete("/"+ Data.board_id);
         response.then().
@@ -54,7 +54,7 @@ public class BaseTest {
                         baseUri(Utils.boardsUrl).
                         queryParam("key", Utils.key).
                         queryParam("token", Utils.token).
-                        when().
+                when().
                         contentType(ContentType.JSON).
                         get("/"+ Data.board_id);
         response.then().
@@ -62,7 +62,5 @@ public class BaseTest {
                 statusCode(404).
                 body(containsString("resource was not found"));
     }
-
-
 
 }

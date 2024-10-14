@@ -48,6 +48,7 @@ public class E2E {
         Data.card_id = cardresponse.path("id");
     }
 
+
     @Test(priority = 1)
     public void getBoard() {
         Response response =
@@ -227,5 +228,4 @@ public class E2E {
                 statusCode(200).
                 body("_value", equalTo(null));
     }
-
 }
