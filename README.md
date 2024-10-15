@@ -57,11 +57,25 @@ The project structure is organized as follows:
 
 ○ E2E: Contains tests related to end to end scenario.
 
+## Execution 
+
+
+https://github.com/user-attachments/assets/01d1b29a-9f03-4b79-a0ba-d6a549d85164
+
+
+
+https://github.com/user-attachments/assets/c24fb043-9bc3-4f5d-9cee-13c9809ae2ab
+
+
+
+
+
 ## Allure Reports
 After Running, copy the absolute path of the 'allure-results' folder and in your terminal (cmd) 
 ```console
 allure serve absolutepath
 ```
+![AllureReport](https://github.com/user-attachments/assets/0b0155d6-d5ef-4c0a-beb0-2ab33f8decde)
 
 ## Contact 
 For any queries or assistance, feel free to contact me via email at dinamagdyelmorsy@outlook.com
